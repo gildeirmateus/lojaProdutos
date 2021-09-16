@@ -13,6 +13,7 @@ const EditProduct = (props) => {
   const history = useHistory();
   const currentProductId = props.match.params.id;
 
+  
   useEffect(() => {
     const productId = currentProductId;
     const selectedProduct = products.find(product => product.id === productId)
